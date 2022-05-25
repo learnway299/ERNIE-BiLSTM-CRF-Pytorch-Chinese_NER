@@ -16,14 +16,15 @@
 
 # 实验
 ## 环境
-使用此平台[openbayes](https://openbayes.com/)的容器可以省去搭环境的麻烦，数据会保存，每次需要安装依赖。
-
-![算力容器.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4b1ccb4332084ff4b9a224df44e1ac8a~tplv-k3u1fbpfcp-watermark.image?)
+使用此平台[openbayes](https://openbayes.com/)的容器可以省去搭环境的麻烦，数据会保存
+每次需要安装依赖
 > pip3 install pytorch-crf -i https://pypi.mirrors.ustc.edu.cn/simple/  
 > pip3 install transformers -i https://pypi.mirrors.ustc.edu.cn/simple/  
 > pip3 install fire -i https://pypi.mirrors.ustc.edu.cn/simple/  
 > pip3 install seqeval -i https://pypi.mirrors.ustc.edu.cn/simple/
 
+运行命令
+> python main.py train --use_cuda=True --batch_size=50 
 ## 结果
 
 ```js
@@ -251,6 +252,7 @@ end_time:2022-04-30 01:51:52.726
 | Weibo数据集   | BERT-BiLSTM-CRF  |81.489 |84.248 | 82.860 |
 | Weibo数据集   | ERNIE-BiLSTM-CRF |81.865 |84.491 | 83.157 |
 
+因为只找到pytorch对应bin格式的ERNIE开源文件，没找到tensorflow对应ft格式的ERNIE开源文件，实现的环境是基于pytorch的<br />
 感谢网友StevenRogers在Gitee分享的源码，虽与其素昧平生，基准模型[BERT-BiLSTM-CRF](https://gitee.com/StevenRogers/bert-bilstm-crf-pytorch.git)<br />
 预训练模型[BERT](https://huggingface.co/bert-base-chinese/tree/main) [ERNIE1.0](https://huggingface.co/nghuyong/ernie-1.0/tree/main)<br />
 数据集 [人民日报](https://github.com/OYE93/Chinese-NLP-Corpus) [MASA](https://github.com/caoyuji1986/ner_corpus) [Boson](https://github.com/HuHsinpang/BosonNER-Pretreatment) [Weibo](https://github.com/OYE93/Chinese-NLP-Corpus)
