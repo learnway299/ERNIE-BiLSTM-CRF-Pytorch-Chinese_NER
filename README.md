@@ -250,3 +250,7 @@ end_time:2022-04-30 01:51:52.726
 | Boson数据集   | ERNIE-BiLSTM-CRF |89.993 |92.094 | 91.031 |
 | Weibo数据集   | BERT-BiLSTM-CRF  |81.489 |84.248 | 82.860 |
 | Weibo数据集   | ERNIE-BiLSTM-CRF |81.865 |84.491 | 83.157 |
+
+感谢网友StevenRogers在Gitee分享的源码，虽与其素昧平生，基准模型[BERT-BiLSTM-CRF](https://gitee.com/StevenRogers/bert-bilstm-crf-pytorch.git)<br />
+预训练模型[BERT](https://huggingface.co/bert-base-chinese/tree/main) [ERNIE1.0](https://huggingface.co/nghuyong/ernie-1.0/tree/main)<br />
+数据集 [人民日报](https://github.com/OYE93/Chinese-NLP-Corpus) [MASA](https://github.com/caoyuji1986/ner_corpus) [Boson](https://github.com/HuHsinpang/BosonNER-Pretreatment) [Weibo](https://github.com/OYE93/Chinese-NLP-Corpus)
