@@ -1,0 +1,16 @@
+<pad>
+B_PER
+I_PER
+B_ORG
+I_ORG
+B_LOC
+I_LOC
+B_COM
+I_COM
+B_PRO
+I_PRO
+B_TIM
+I_TIM
+O
+<start>
+<eos>
